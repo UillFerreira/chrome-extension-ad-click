@@ -1,0 +1,21 @@
+{
+    "name": "UillTube - AD",
+    "description": "A Google Chrome extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["scripting", "storage", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["js/teste.js"]
+        }    
+    ],
+    "action" : {
+        "default-icon": {
+            "48": "/assets/48.ico",
+            "128": "/assets/128.ico"
+        },
+        "default-tile" : "Uilltube - AD",
+        "default_popup" : "popup.html"
+    }
+}
