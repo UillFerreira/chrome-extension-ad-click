@@ -38,7 +38,6 @@ function stayWatching() {
         console.log("1", elm);
         setTimeout(function () {
             console.log("Chamou o timeout 1");
-            console.log(document.getElementById ("above-the-fold").childNodes[1].childNodes[7].innerText);
             console.log(elm);
             elm.click();
             stayWatching();
@@ -70,5 +69,3 @@ function stayWatching() {
 }
 
 stayWatching();
-
-
